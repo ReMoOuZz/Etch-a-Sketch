@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Inter:ital,opsz@0,14..32;1,14..32&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+    </style>
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="setupContainer">
       <button id="dimensionsButton">Size</button>
+      <button id="blackButton">Black</button>
       <button id="rainbowButton">Rainbow</button>
       <button id="resetButton">
         <span>Clear</span>
       </button>
     </div>
-    <div class="contentContainer">
+    <div id="sketch-wrapper">
+      <img class="sketch-img" id="etch-frame" src="./images/etch_a_sketch.png" alt="Etch-a-Sketch frame" />
       <div class="container" id="container"></div>
     </div>
     <script src="./main.js"></script>
